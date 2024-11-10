@@ -26,3 +26,11 @@ ext {
 	targetCompatibility = JavaVersion.VERSION_1_8
 	lintAbortOnError = false
 }
+
+dependencyResolutionManagement {
+	repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+	repositories {
+		mavenCentral()
+		maven { url 'https://jitpack.io' }
+	}
+}
